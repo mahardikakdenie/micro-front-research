@@ -14,7 +14,7 @@ export default defineConfig({
         "./Button": "./src/components/Button.vue",
         "./HelloWorld": "./src/components/HelloWorld.vue"
       },
-      shared: ["vue", require("./package.json").dependencies],
+      shared: ["vue"],
     }),
   ],
   build: {
