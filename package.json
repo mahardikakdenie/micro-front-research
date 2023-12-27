@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp netlify.toml dist/netlify.toml",
+    "build": "vite build && cp public/_redirects dist/_redirects",
     "preview": "vite preview"
   },
   "dependencies": {
