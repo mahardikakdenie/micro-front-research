@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     vue(),
     federation({
-      name: "oex-shared-app",
+      name: "OEXShared",
       filename: "remoteEntry.js",
       // Modules to expose
       exposes: {
@@ -18,6 +18,9 @@ export default defineConfig({
     }),
   ],
   build: {
-    target: ["chrome89", "edge89", "firefox89", "safari15"],
+    modulePreload: false,
+    target: "esnext",
+    minify: false,
+    cssCodeSplit: false,
   },
 });
