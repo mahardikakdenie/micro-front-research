@@ -12,7 +12,8 @@ export default defineConfig({
       // Modules to expose
       exposes: {
         "./Button": "./src/components/Button.vue",
-        "./HelloWorld": "./src/components/HelloWorld.vue"
+        "./HelloWorld": "./src/components/HelloWorld.vue",
+        "./Page": "./src/components/Page.vue"
       },
       shared: ["vue"],
     }),
